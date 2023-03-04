@@ -2,7 +2,7 @@ export default function ToDo({ todo, toggleTask, removeTask }) {
     return (
         <div key={todo.id} className="item-todo">
 
-            <div className={todo.complete ? "item-text strike" : "item-text"}
+            <div className={todo.checked ? "item-text strike" : "item-text"}
                 onClick={() => toggleTask(todo.id)}>
                 <p>{todo.task}</p>
             </div>
