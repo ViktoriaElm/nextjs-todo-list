@@ -2,7 +2,7 @@ import { useState } from "react"
 import ToDo from "./todo";
 import ToDoForm from "./todoform";
 
-export default function App({ Component, pageProps }) {
+export default function App() {
     const [todos, setTodos] = useState([]);
 
     const addTask = (userInput) => {
