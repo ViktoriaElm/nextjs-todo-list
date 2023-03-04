@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
     const handleToggle = (id) => {
         setTodos([
             ...todos.map((todo) =>
-                todo.id === id ? { ...todo, complete: !todo.complete } : { ...todo })
+                todo.id === id ? { ...todo, checked: !todo.checked } : { ...todo })
         ])
     }
 
