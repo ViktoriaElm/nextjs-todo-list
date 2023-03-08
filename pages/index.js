@@ -3,6 +3,7 @@ import ToDo from "../components/todo"
 import ToDoForm from "../components/todoform"
 
 export default function App() {
+    console.count('App')
     const [todos, setTodos] = useState([]);
 
     const addTask = useCallback((userInput) => {

@@ -1,6 +1,7 @@
 import { useCallback, useState } from "react"
 
 export default function ToDoForm({ addTask }) {
+    console.count('ToDoForm')
     const [userInput, setUserInput] = useState('')
 
     const handleSubmit = useCallback((e) => {

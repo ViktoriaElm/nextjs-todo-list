@@ -1,4 +1,5 @@
 export default function ToDo({ todo, toggleTask, removeTask }) {
+    console.count('ToDo')
     return (
         <div key={todo.id} className="item-todo">
 
