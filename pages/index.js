@@ -41,8 +41,10 @@ export default function App() {
             </header>
 
             <ToDoForm addTask={addTask} />
-            <h3>Осталось выполнить: {todos.length}</h3>
-            <button className="clearAll" onClick={clearAll}>Очистить все</button>
+            <div className="clearBtn">
+                <h3>Осталось выполнить: {todos.length}</h3>
+                <button className="clearAll" onClick={clearAll}>Очистить все</button>
+            </div>
 
             <div className="task">
 

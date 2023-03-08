@@ -18,7 +18,7 @@ h1 {
   margin: 0px 3px 0px;
   font: 4vmin sans-serif;
   color: rgb(20, 59, 95, 0.9);
-  text-shadow: 1px 1px 3px rgb(20, 59, 95, 0.4);
+  text-shadow: 1px 1px 2px rgb(20, 59, 95, 0.4);
 }
 
 form {
@@ -27,8 +27,8 @@ form {
   margin:35px 0px 25px;
   padding: 30px 0px 30px;
   background-color: rgb(238, 77, 135, 0.1);
-  border-radius: 15px;
-  box-shadow: 3px 3px rgb(238, 77, 135, 0.4), -1em 0 .4em rgb(20, 59, 95, 0.1);
+  border-radius: 5px 15px;
+  box-shadow: 3px 3px rgb(238, 77, 135, 0.2), -0.5em 0 .4em rgb(20, 59, 95, 0.1);
   width: 48vw;
   min-width: 350px;
 }
@@ -46,48 +46,44 @@ input {
   background-color: white;
   border: none;
   outline:none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 3px 10px;
   border: 1px solid rgb(139, 179, 232, 0.3);
+  box-shadow: 3px 3px rgb(20, 59, 95, 0.05), -0.5em 0 .4em rgb(20, 59, 95, 0.1);
 }
 
 button {
-  margin: 0px 20px 0px 0px;
+  margin: 2px 20px 0px 15px;
   padding: 5px 5px 0px;
-  
   width:7%;
   min-width: 40px;
-  border-radius: 5px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-radius: 3px 10px;
   border: none;
   outline: 1px solid rgb(139, 179, 232, 0.4);
   background-color: rgb(20, 59, 95);
   font-size: 25px;
   color: #EAFFFE;
+  box-shadow: 3px 3px rgb(20, 59, 95, 0.05), -0.5em 0 .4em rgb(20, 59, 95, 0.1);
 }
 
 h3 {
-  margin: 0px 10px 25px;
+  margin: 0px 15px 0px -15px;
   font: 2vmin sans-serif;
   color: #2F7F7C;
 }
 
 .item-todo {
-  border-radius: 15px;
+  border-radius: 3px 10PX;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   align-items: flex-start;
   margin:5px 0px 5px 13px;
   width: 48vw;
   min-width: 330px;
-  box-shadow: 3px 3px rgb(238, 77, 135, 0.4), -1em 0 .4em rgb(20, 59, 95, 0.1);
+  box-shadow: 3px 3px rgb(238, 77, 135, 0.2), -0.5em 0 .4em rgb(20, 59, 95, 0.1);
 }
 
 .item-todo > div {
   display: flex;
-  
   align-items: center;
   min-height:40px;
   border-radius: 5px;
@@ -131,3 +127,18 @@ span {
   overflow: auto;
 }
 
+.clearAll {
+  font-size: 12px;
+  width: 110px;
+  padding: 5px;
+  border-radius: 3px 8px;
+  margin: 0px 10px;
+  box-shadow: 1px 1px 3px rgb(238, 77, 135, 0.3)
+}
+
+.clearBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 17px;
+}
